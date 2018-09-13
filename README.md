@@ -1,6 +1,7 @@
-Vagrant for Hadoop, Spark and Hive on top of Postgresql
-Python Anaconda2 5.0.1
-=======================================================
+Creating Hadoop Clustes
+=======================
+This document explains how to create Hadoop clusters using Spark, Scala, and Hive on top of PostgreSQL, and Python version Anaconda2 5.0.1.
+
 
 # Introduction
 --------------------------------------------------------------------------------

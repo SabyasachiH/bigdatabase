@@ -4,11 +4,11 @@ This document explains how to create Hadoop clusters using Spark, Scala, and Hiv
 
 You can implement the following clustering architectures: 
 
-- Vagrant With Oracle Virtual Box: Single Node: 
+- **Vagrant With Oracle Virtual Box**: Single Node implementation.
 
-- Vagrant AWS: Single node or three node Orcastation is take care by vagrant, provosioning by ansible;
+- **Vagrant AWS**: Single node or three node implementation with orchestration done by vagrant, provisioning by Ansible.
 
-- Bare Metal: By creating your ivntory file on any machine/node. 
+- **Bare Metal**: By creating your own inventory file on any machine/node. 
 
 # Requirments
 -------------

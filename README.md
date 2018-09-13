@@ -1,4 +1,4 @@
-Creating Hadoop Clustes
+Creating Hadoop Clusters
 =======================
 This document explains how to create Hadoop clusters using Spark, Scala, and Hive on top of PostgreSQL, and Python version Anaconda2 5.0.1.
 

@@ -4,11 +4,11 @@ This document explains how to create Hadoop clusters using Spark, Scala, and Hiv
 
 You can implement the following clustering architectures: 
 
-- **Vagrant With Oracle Virtual Box**: Single Node implementation.
+- **Vagrant With Oracle VirtualBox**: Single node implementation.
 
-- **Vagrant AWS**: Single node or three node implementation with orchestration done by vagrant, provisioning by Ansible.
+- **Vagrant AWS**: Single node or three node implementation with orchestration done by Vagrant, provisioning by Ansible.
 
-- **Bare Metal**: By creating your own inventory file on any machine/node. 
+- **Bare Metal**: By creating your own inventory file on any machine or node. 
 
 # Requirments
 -------------
@@ -17,10 +17,10 @@ Here the list of software along with their versions.
 
 |Software | Version|
 | ------ | ----- | 
-|Vagrant ||
-|Oracle Virtual Box ||
+|Vagrant |2.1.1|
+|Oracle VirtualBox |5.0.18|
 |Vagrant AWS plugin | |
-|Ansible | |
+|Ansible |2.4.1.0 |
 |Linux box ||
 |Hadoop| 2.7.4|
 |Hive| 1.2.2|
@@ -50,10 +50,7 @@ The virtual machine will be running the following services:
 * Hive metastore and server2
 * Spark history server
 
-
-# Getting Started
---------------------------------------------------------------------------------
-VirtualBox deployment
+Deploying on Oracle VirtualBox
 --------------------------------------------------------------------------------
 1. [Download and install VirtualBox 5.0.18](https://www.virtualbox.org/wiki/Downloads)
 2. [Download and install Vagrant 2.1.1](http://www.vagrantup.com/downloads.html)
@@ -66,7 +63,7 @@ download and extract the latest source of this project
 7. Run ```vagrant up``` to create the VM
 8. Execute ```vagrant ssh``` to login to the VM
 --------------------------------------------------------------------------------
-AWS deployment
+Deploying on AWS 
 --------------------------------------------------------------------------------
 1. [Download and install Vagrant 2.1.1](http://www.vagrantup.com/downloads.html)
 2. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
@@ -80,7 +77,7 @@ download and extract the latest source of this project
 8. Execute ```vagrant ssh cedric-1.0.0-1``` to login to the VM
 
 --------------------------------------------------------------------------------
-Bare metal deployment
+Deploying on Bare Metal Devices 
 --------------------------------------------------------------------------------
 1. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
 2. [Install SSHPASS] (https://gist.github.com/arunoda/7790979)

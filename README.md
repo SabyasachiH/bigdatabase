@@ -51,7 +51,9 @@ The virtual machine will be running the following services:
 * Spark history server
 
 Deploying on Oracle VirtualBox
---------------------------------------------------------------------------------
+------------------------------
+Follow these steps to deploy clustering using OVB:
+
 1. [Download and install VirtualBox 5.0.18](https://www.virtualbox.org/wiki/Downloads)
 2. [Download and install Vagrant 2.1.1](http://www.vagrantup.com/downloads.html)
 3. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
@@ -62,9 +64,11 @@ download and extract the latest source of this project
 (i.e. `cd bigdatabase`)
 7. Run ```vagrant up``` to create the VM
 8. Execute ```vagrant ssh``` to login to the VM
---------------------------------------------------------------------------------
+
 Deploying on AWS 
---------------------------------------------------------------------------------
+-----------------
+Follow these steps to deploy clustering on AWS:
+
 1. [Download and install Vagrant 2.1.1](http://www.vagrantup.com/downloads.html)
 2. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
 3. [Install SSHPASS] (https://gist.github.com/arunoda/7790979)
@@ -76,9 +80,11 @@ download and extract the latest source of this project
 7. Run ```vagrant up``` to create the VM
 8. Execute ```vagrant ssh cedric-1.0.0-1``` to login to the VM
 
---------------------------------------------------------------------------------
-Deploying on Bare Metal Devices 
---------------------------------------------------------------------------------
+
+Deploying on Bare-Metal Devices 
+-------------------------------
+
+Follow these steps to deploy clustering on bare-metal devices:
 1. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
 2. [Install SSHPASS] (https://gist.github.com/arunoda/7790979)
 3. Go to [releases](https://github.com/datacell/bigdatabase/releases) and

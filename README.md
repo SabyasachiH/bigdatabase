@@ -2,9 +2,35 @@ Creating Hadoop Clusters
 =======================
 This document explains how to create Hadoop clusters using Spark, Scala, and Hive on top of PostgreSQL, and Python version Anaconda2 5.0.1.
 
+You can implement the following clustering architectures: 
 
-# Introduction
---------------------------------------------------------------------------------
+- Vagrant With Oracle Virtual Box: Single Node: 
+
+- Vagrant AWS: Single node or three node Orcastation is take care by vagrant, provosioning by ansible;
+
+- Bare Metal: By creating your ivntory file on any machine/node. 
+
+# Requirments
+-------------
+
+Here the list of software along with their versions. 
+
+|Software | Version|
+| ------ | ----- | 
+|Vagrant ||
+|Oracle Virtual Box ||
+|Vagrant AWS plugin | |
+|Ansible | |
+|Linux box ||
+|Hadoop| 2.7.4|
+|Hive| 1.2.2|
+|Spark| 2.1.1|
+|Scala| 2.11.6|
+|PostgreSQL| 9.5 (for hive metastore)|
+|Anaconda2| 5.0.1|
+|Node| 8.9.0|
+
+
 Vagrant project to spin up a virtual machine running cluster on top of
 64 bit Ubuntu/Xenial:
 

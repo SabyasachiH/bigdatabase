@@ -4,7 +4,7 @@ This document explains how to create Hadoop clusters using Spark, Scala, and Hiv
 
 You can implement the following clustering architectures: 
 
-- **Vagrant With Oracle VirtualBox**: Single node implementation.
+- **Vagrant With Oracle VirtualBox**: Single-node implementation.
 
 - **Vagrant AWS**: Single node or three node implementation with orchestration done by Vagrant, provisioning by Ansible.
 
@@ -58,7 +58,7 @@ Follow these steps to deploy clustering using OVB:
 2. Download and install Vagrant 2.1.1 using the instructions given [here.](http://www.vagrantup.com/downloads.html)
 3. Download and install Ansible 2.4.1.0 using the instructions given [here.](https://releases.ansible.com/ansible/)
 4. Download and install SSHPASS using the instructions given [here.](https://gist.github.com/arunoda/7790979)
-5. Download and extract the latest ShareInsights source from here: [releases](https://github.com/datacell/bigdatabase/releases)
+5. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
 6. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
 7. Execute the comamnd ```vagrant up``` to create the VM
@@ -68,15 +68,14 @@ Deploying on AWS
 -----------------
 Follow these steps to deploy clustering on AWS:
 
-1. [Download and install Vagrant 2.1.1](http://www.vagrantup.com/downloads.html)
-2. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
-3. [Install SSHPASS] (https://gist.github.com/arunoda/7790979)
-4. Go to [releases](https://github.com/datacell/bigdatabase/releases) and
-download and extract the latest source of this project
+1. Download and install Vagrant 2.1.1 using the instructions given [here.](http://www.vagrantup.com/downloads.html)
+2. Download and install Ansible 2.4.1.0 using the instructions given [here.](https://releases.ansible.com/ansible/)
+3. Download and install SSHPASS using the instructions given [here.](https://gist.github.com/arunoda/7790979)
+4. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
 5. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
 6. Rename the Vagrantfile-aws to Vagrantfile
-7. Run ```vagrant up``` to create the VM
+7. Execute the command ```vagrant up``` to create the VM
 8. Execute ```vagrant ssh cedric-1.0.0-1``` to login to the VM
 
 
@@ -84,10 +83,9 @@ Deploying on Bare-Metal Devices
 -------------------------------
 
 Follow these steps to deploy clustering on bare-metal devices:
-1. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
-2. [Install SSHPASS] (https://gist.github.com/arunoda/7790979)
-3. Go to [releases](https://github.com/datacell/bigdatabase/releases) and
-download and extract the latest source of this project
+1. Download and install Ansible 2.4.1.0 using the instructions given [here.](https://releases.ansible.com/ansible/)
+2. Download and install SSHPASS using the instructions given [here.](https://gist.github.com/arunoda/7790979)
+3. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
 4. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
 5. Run the ansible_wrapper.sh ```./ansible_wrapper.sh -b <Target machine hostname> <Target machine ip> <Target machine ssh port> <Target machine ssh user> [hadoop]```

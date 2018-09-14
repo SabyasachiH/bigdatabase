@@ -54,15 +54,14 @@ Deploying on Oracle VirtualBox
 ------------------------------
 Follow these steps to deploy clustering using OVB:
 
-1. [Download and install VirtualBox 5.0.18](https://www.virtualbox.org/wiki/Downloads)
-2. [Download and install Vagrant 2.1.1](http://www.vagrantup.com/downloads.html)
-3. [Download and install Ansible 2.4.1.0](https://releases.ansible.com/ansible/)
-4. [Install SSHPASS] (https://gist.github.com/arunoda/7790979)
-5. Go to [releases](https://github.com/datacell/bigdatabase/releases) and
-download and extract the latest source of this project
+1. Download and install Oracle VirtualBox 5.0.18 using the instructions given [here.](https://www.virtualbox.org/wiki/Downloads)
+2. Download and install Vagrant 2.1.1 using the instructions given [here.](http://www.vagrantup.com/downloads.html)
+3. Download and install Ansible 2.4.1.0 using the instructions given [here.](https://releases.ansible.com/ansible/)
+4. Download and install SSHPASS using the instructions given [here.](https://gist.github.com/arunoda/7790979)
+5. Download and extract the latest ShareInsights source from here: [releases](https://github.com/datacell/bigdatabase/releases)
 6. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
-7. Run ```vagrant up``` to create the VM
+7. Execute the comamnd ```vagrant up``` to create the VM
 8. Execute ```vagrant ssh``` to login to the VM
 
 Deploying on AWS 

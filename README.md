@@ -56,9 +56,9 @@ Follow these steps to deploy clustering on AWS:
 2. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
 3. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
-4. Rename the Vagrantfile-aws to Vagrantfile
-5. Execute the command ```vagrant up``` to create the VM
-6. Execute ```vagrant ssh cedric-1.0.0-1``` to login to the VM
+4. Rename the Vagrantfile-aws to Vagrantfile.
+5. Execute the command ```vagrant up``` to create the VM.
+6. Execute ```vagrant ssh cedric-1.0.0-1``` to login to the VM.
 
 
 Deploying on Bare-Metal Devices 
@@ -68,12 +68,12 @@ Follow these steps to deploy clustering on bare-metal devices:
 1. Install Ansible 2.4.1.0 and SSHPASS. 
 2. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
-3. Run the ansible_wrapper.sh ```./ansible_wrapper.sh -b <Target machine hostname> <Target machine ip> <Target machine ssh port> <Target machine ssh user> [hadoop]```
-4. If Java is to be installed, please set setup_java to True in the vars file
+3. Run the ansible_wrapper.sh ```./ansible_wrapper.sh -b <Target machine hostname> <Target machine ip> <Target machine ssh port> <Target machine ssh user> [hadoop]```.
+4. If Java is to be installed, please set *setup_java* to *True* in the *vars* file
 
 Note: 
-1. Hadoop will not be installed if parameter is not specified
-2. Script will ask for sudo passwords multiple times during execution, please ensure provided user has elevated rights
+1. Hadoop will not be installed if parameter is not specified.
+2. Script will ask for sudo passwords multiple times during execution, please ensure provided user has elevated rights.
 
 # Web-user Interfaces
 --------------------------------------------------------------------------------

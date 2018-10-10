@@ -13,6 +13,7 @@ You can do the following implement types:
 You will get the following components when you deploy software using Vagrant:
 
 |Software | Version|
+| ------ | ----- | 
 |Linux box ||
 |Vagrant AWS plugin | 
 |Hadoop| 2.7.4|

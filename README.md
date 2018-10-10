@@ -1,27 +1,20 @@
 Creating Hadoop Clusters
 =======================
-This document explains how to create Hadoop clusters using Spark, Scala, and Hive on top of PostgreSQL, and Python version Anaconda2 5.0.1.
+This document explains how to create Hadoop clusters with Spark, Scala, and Hive on top of PostgreSQL. 
 
-You can implement the following clustering architectures: 
+You can do the following implement types: 
 
 - **Vagrant With Oracle VirtualBox**: Single-node implementation.
 
-- **Vagrant AWS**: Single node or three node implementation with orchestration done by Vagrant, provisioning by Ansible.
+- **Vagrant AWS**: Single node implementation with orchestration done by Vagrant, provisioning by Ansible.
 
 - **Bare Metal**: By creating your own inventory file on any machine or node. 
 
-# Requirments
--------------
-
-Here the list of software along with their versions. 
+You will get the following components when you deploy software using Vagrant:
 
 |Software | Version|
-| ------ | ----- | 
-|Vagrant |2.1.1|
-|Oracle VirtualBox |5.0.18|
-|Vagrant AWS plugin | |
-|Ansible |2.4.1.0 |
 |Linux box ||
+|Vagrant AWS plugin | 
 |Hadoop| 2.7.4|
 |Hive| 1.2.2|
 |Spark| 2.1.1|
@@ -30,25 +23,19 @@ Here the list of software along with their versions.
 |Anaconda2| 5.0.1|
 |Node| 8.9.0|
 
+# Requirements
+-------------
 
-Vagrant project to spin up a virtual machine running cluster on top of
-64 bit Ubuntu/Xenial:
+Here the list of software along with their versions. 
 
-* Hadoop 2.7.4
-* Hive 1.2.2
-* Spark 2.1.1
-* Scala 2.11.6
-* Postgresql 9.5 (for hive metastore)
-* Anaconda2 5.0.1
-* Node 8.9.0
+|Software | Version|
+| ------ | ----- | 
+|Vagrant |2.1.1|
+|Oracle VirtualBox |5.0.18|
+|Ansible |2.4.1.0 |
+|Ansible |2.4.1.0 |
+|SSHPASS||
 
-
-The virtual machine will be running the following services:
-
-* HDFS NameNode + DataNode
-* YARN ResourceManager/NodeManager + JobHistoryServer + ProxyServer
-* Hive metastore and server2
-* Spark history server
 
 Deploying on Oracle VirtualBox
 ------------------------------
@@ -89,9 +76,11 @@ Follow these steps to deploy clustering on bare-metal devices:
 4. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
 5. Run the ansible_wrapper.sh ```./ansible_wrapper.sh -b <Target machine hostname> <Target machine ip> <Target machine ssh port> <Target machine ssh user> [hadoop]```
-6. Note: Hadoop will not be installed if parameter is not specified
-7. Note: Script will ask for sudo passwords multiple times during execution, please ensure provided user has elevated rights
-8. If Java is to be installed, please set setup_java to True in the vars file
+6. If Java is to be installed, please set setup_java to True in the vars file
+
+Note: 
+1. Hadoop will not be installed if parameter is not specified
+2. Script will ask for sudo passwords multiple times during execution, please ensure provided user has elevated rights
 
 # Web user interfaces
 --------------------------------------------------------------------------------
@@ -109,10 +98,10 @@ VirtualBox
 --------------------------------------------------------------------------------
 AWS
 --------------------------------------------------------------------------------
-* YARN resource manager:  (http://<publicip>:8088)
-* HDFS: (http://<publicip>:50070/dfshealth.html)
-* Spark history server: (http://<publicip>:18080)
-* Spark context UI (if a Spark context is running): (http://<publicip>:4040)
+* YARN resource manager:  (http://publicip:8088)
+* HDFS: (http://publicip:50070/dfshealth.html)
+* Spark history server: (http://publicip:18080)
+* Spark context UI (if a Spark context is running): (http://publicip:4040)
 [Spark context server port is open from 4040 to 4044]
 
 # Shared Folder (VirtualBox Only)

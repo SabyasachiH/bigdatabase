@@ -45,7 +45,7 @@ Follow these steps to deploy clustering using OVB:
 2. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
 3. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
-4. Execute the comamnd ```vagrant up``` to create the VM
+4. Execute the command ```vagrant up``` to create the VM
 5. Execute ```vagrant ssh``` to login to the VM
 
 Deploying on AWS 
@@ -102,7 +102,7 @@ AWS
 Vagrant automatically mounts the folder containing the Vagrant file from the
 host machine to the guest machine as `/vagrant` inside the guest.
 
-# Managment of Vagrant VM
+# Management of Vagrant VM
 --------------------------------------------------------------------------------
 To stop the VM, while preserving the setup and data within the VM: 
 
@@ -147,9 +147,9 @@ $ /bin/bash /opt/service-start-cluster.sh
 
 # Credits
 
-Thanks to Andrew Rothstein for the great work at
+Thanks to Andrew Rothstein for the great work at:
 (https://github.com/andrewrothstein/ansible-anaconda)
 
-Thanks to Martin Robson and xiaomei-data for great work at
+Thanks to Martin Robson and Xiaomei-data for great work at:
 (https://github.com/martinprobson/vagrant-hadoop-hive-spark)
 (https://github.com/xiaomei-data/ansible-hadoop-spark)

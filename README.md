@@ -29,55 +29,47 @@ You will get the following components when you deploy software using Vagrant:
 
 Here the list of software along with their versions. 
 
-|Software | Version|
-| ------ | ----- | 
-|Vagrant |2.1.1|
-|Oracle VirtualBox |5.0.18|
-|Ansible |2.4.1.0 |
-|Ansible |2.4.1.0 |
-|SSHPASS||
+|Software | Version|Download Link|Comments|
+| ------ | ----- | ----- | ----- | 
+|Vagrant |2.1.1|Click [Click here.](http://www.vagrantup.com/downloads.html)||
+|Oracle VirtualBox |5.0.18|[Click here.](https://www.virtualbox.org/wiki/Downloads)||
+|Ansible |2.4.1.0 |[Click here.](https://releases.ansible.com/ansible/)||
+|SSHPASS||[Click here.](https://gist.github.com/arunoda/7790979)||
 
 
 Deploying on Oracle VirtualBox
 ------------------------------
 Follow these steps to deploy clustering using OVB:
 
-1. Download and install Oracle VirtualBox 5.0.18 using the instructions given [here.](https://www.virtualbox.org/wiki/Downloads)
-2. Download and install Vagrant 2.1.1 using the instructions given [here.](http://www.vagrantup.com/downloads.html)
-3. Download and install Ansible 2.4.1.0 using the instructions given [here.](https://releases.ansible.com/ansible/)
-4. Download and install SSHPASS using the instructions given [here.](https://gist.github.com/arunoda/7790979)
-5. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
-6. In your terminal change your directory into the project directory
+1. Install Oracle VirtualBox 5.0.18, Vagrant 2.1.1, Ansible 2.4.1.0, and SSHPASS. 
+2. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
+3. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
-7. Execute the comamnd ```vagrant up``` to create the VM
-8. Execute ```vagrant ssh``` to login to the VM
+4. Execute the comamnd ```vagrant up``` to create the VM
+5. Execute ```vagrant ssh``` to login to the VM
 
 Deploying on AWS 
 -----------------
 Follow these steps to deploy clustering on AWS:
 
-1. Download and install Vagrant 2.1.1 using the instructions given [here.](http://www.vagrantup.com/downloads.html)
-2. Download and install Ansible 2.4.1.0 using the instructions given [here.](https://releases.ansible.com/ansible/)
-3. Download and install SSHPASS using the instructions given [here.](https://gist.github.com/arunoda/7790979)
-4. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
-5. In your terminal change your directory into the project directory
+1. Install Vagrant 2.1.1, Ansible 2.4.1.0, and SSHPASS. 
+2. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
+3. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
-6. Rename the Vagrantfile-aws to Vagrantfile
-7. Execute the command ```vagrant up``` to create the VM
-8. Execute ```vagrant ssh cedric-1.0.0-1``` to login to the VM
+4. Rename the Vagrantfile-aws to Vagrantfile
+5. Execute the command ```vagrant up``` to create the VM
+6. Execute ```vagrant ssh cedric-1.0.0-1``` to login to the VM
 
 
 Deploying on Bare-Metal Devices 
 -------------------------------
 
 Follow these steps to deploy clustering on bare-metal devices:
-1. Download and install Ansible 2.4.1.0 using the instructions given [here.](https://releases.ansible.com/ansible/)
-2. Download and install SSHPASS using the instructions given [here.](https://gist.github.com/arunoda/7790979)
-3. Download and extract the latest ShareInsights source from here: [Releases](https://github.com/datacell/bigdatabase/releases).
-4. In your terminal change your directory into the project directory
+1. Install Ansible 2.4.1.0 and SSHPASS. 
+2. In your terminal change your directory into the project directory
 (i.e. `cd bigdatabase`)
-5. Run the ansible_wrapper.sh ```./ansible_wrapper.sh -b <Target machine hostname> <Target machine ip> <Target machine ssh port> <Target machine ssh user> [hadoop]```
-6. If Java is to be installed, please set setup_java to True in the vars file
+3. Run the ansible_wrapper.sh ```./ansible_wrapper.sh -b <Target machine hostname> <Target machine ip> <Target machine ssh port> <Target machine ssh user> [hadoop]```
+4. If Java is to be installed, please set setup_java to True in the vars file
 
 Note: 
 1. Hadoop will not be installed if parameter is not specified

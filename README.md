@@ -31,7 +31,7 @@ Here the list of software along with their versions.
 
 |Software | Version|Download Link|Comments|
 | ------ | ----- | ----- | ----- | 
-|Vagrant |2.1.1|Click [Click here.](http://www.vagrantup.com/downloads.html)||
+|Vagrant |2.1.1|[Click here.](http://www.vagrantup.com/downloads.html)||
 |Oracle VirtualBox |5.0.18|[Click here.](https://www.virtualbox.org/wiki/Downloads)||
 |Ansible |2.4.1.0 |[Click here.](https://releases.ansible.com/ansible/)||
 |SSHPASS||[Click here.](https://gist.github.com/arunoda/7790979)||

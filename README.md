@@ -31,10 +31,10 @@ Here the list of software along with their versions.
 
 |Software | Version|Download Link|Comments|
 | ------ | ----- | ----- | ----- | 
-|Vagrant |2.1.1|[Click here.](http://www.vagrantup.com/downloads.html)||
-|Oracle VirtualBox |5.0.18|[Click here.](https://www.virtualbox.org/wiki/Downloads)||
-|Ansible |2.4.1.0 |[Click here.](https://releases.ansible.com/ansible/)||
-|SSHPASS||[Click here.](https://gist.github.com/arunoda/7790979)||
+|Vagrant |2.1.1|[Click here.](http://www.vagrantup.com/downloads.html)|Required for Oracle VirtualBox and AWS deployments.|
+|Oracle VirtualBox |5.0.18|[Click here.](https://www.virtualbox.org/wiki/Downloads)|Required for Oracle VirtualBox deployments.|
+|Ansible |2.4.1.0 |[Click here.](https://releases.ansible.com/ansible/)|Required for all deployment types.|
+|SSHPASS||[Click here.](https://gist.github.com/arunoda/7790979)|Required for all deployment types.|
 
 
 Deploying on Oracle VirtualBox
@@ -75,7 +75,7 @@ Note:
 1. Hadoop will not be installed if parameter is not specified
 2. Script will ask for sudo passwords multiple times during execution, please ensure provided user has elevated rights
 
-# Web user interfaces
+# Web-user Interfaces
 --------------------------------------------------------------------------------
 Here are some useful links to navigate to various UI's:
 --------------------------------------------------------------------------------
@@ -100,12 +100,11 @@ AWS
 # Shared Folder (VirtualBox Only)
 --------------------------------------------------------------------------------
 Vagrant automatically mounts the folder containing the Vagrant file from the
-host machine into the guest machine as `/vagrant` inside the guest.
-
+host machine to the guest machine as `/vagrant` inside the guest.
 
 # Managment of Vagrant VM
 --------------------------------------------------------------------------------
-To stop the VM and preserve all setup/data within the VM: -
+To stop the VM, while preserving the setup and data within the VM: 
 
 ```
 vagrant halt
@@ -117,21 +116,21 @@ or
 vagrant suspend
 ```
 
-Issue a `vagrant up` command again to restart the VM from where you left off.
+Execute `vagrant up` command again to restart the VM from where you left off.
 
 
 To completely **wipe** the VM so that `vagrant up` command gives you a fresh
-machine: -
+machine: 
 
 ```
 vagrant destroy
 ```
 
-Then issue `vagrant up` command as usual.
+After that, execute: `vagrant up` command as usual.
 
 
 
-# Starting / stoping services manually
+# Starting / Stoping Services Manually
 --------------------------------------------------------------------------------
 
 ```
